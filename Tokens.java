@@ -82,6 +82,9 @@ public enum Tokens {
     Coma,
     Main,
     Identificador,
+    Libreria,
+    DosPuntos,
+    TextoEntreComillas,
     Numero,
     ERROR
 }

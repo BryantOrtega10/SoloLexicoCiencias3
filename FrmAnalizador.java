@@ -42,23 +42,18 @@ public class FrmAnalizador extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BotonAnalisis = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         Resultado = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtAnalizarLex = new javax.swing.JTextArea();
         btnArchivo = new javax.swing.JButton();
         Borrar1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        BotonAnalisis = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        BotonAnalisis.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        BotonAnalisis.setText("Análisis Léxico");
-        BotonAnalisis.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonAnalisisActionPerformed(evt);
-            }
-        });
 
         Resultado.setColumns(20);
         Resultado.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
@@ -85,37 +80,77 @@ public class FrmAnalizador extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Analizador Léxico");
+        jLabel1.setToolTipText("");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        BotonAnalisis.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        BotonAnalisis.setText("Análisis Léxico");
+        BotonAnalisis.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonAnalisisActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setText("Oscar David Rojas Pardo - 20191020038");
+        jLabel2.setToolTipText("");
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel3.setText("Bryant David Ortega Veloza - 20191020025");
+        jLabel3.setToolTipText("");
+        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnArchivo, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(BotonAnalisis)
-                        .addGap(292, 292, 292)
-                        .addComponent(Borrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 579, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnArchivo, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(BotonAnalisis))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(191, 191, 191)
+                                .addComponent(Borrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE))))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(28, 28, 28))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE, false)
-                    .addComponent(btnArchivo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BotonAnalisis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Borrar1))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
-                .addContainerGap(150, Short.MAX_VALUE))
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addGap(45, 45, 45)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnArchivo, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
+                    .addComponent(Borrar1)
+                    .addComponent(BotonAnalisis))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane2)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE))
+                .addGap(34, 34, 34))
         );
 
         pack();
@@ -172,7 +207,7 @@ public class FrmAnalizador extends javax.swing.JFrame {
                     resultado += "<Tipo de Dato String>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case If:
-                    resultado += "<Reservada If>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Reservada If>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Else:
                     resultado += "<Reservada Else>\t\t" + lexicos.lexemas + "\n";
@@ -256,133 +291,142 @@ public class FrmAnalizador extends javax.swing.JFrame {
                     resultado += "<Reservada Std>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Igual:
-                    resultado += "<Reservada Igual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Igual>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Suma:
-                    resultado += "<Reservada Suma>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Suma>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Resta:
-                    resultado += "<Reservada Resta>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Resta>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Multiplicacion:
-                    resultado += "<Reservada Multiplicacion>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Multiplicacion>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Division:
-                    resultado += "<Reservada Division>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Division>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Modulo:
-                    resultado += "<Reservada Modulo>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Modulo>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Potencia:
-                    resultado += "<Reservada Potencia>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Potencia>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_And:
-                    resultado += "<Reservada Op_And>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador And>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_Or:
-                    resultado += "<Reservada Op_Or>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador Or>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_Not:
-                    resultado += "<Reservada Op_Not>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador Not>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_Nand:
-                    resultado += "<Reservada Op_Nand>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador Nand>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_Nor:
-                    resultado += "<Reservada Op_Nor>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador Nor>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_Mayor:
-                    resultado += "<Reservada Op_Mayor>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador Mayor>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_Menor:
-                    resultado += "<Reservada Op_Menor>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador Menor>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_IgualA:
-                    resultado += "<Reservada Op_IgualA>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador IgualA>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_DiferenteDe:
-                    resultado += "<Reservada Op_DiferenteDe>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador DiferenteDe>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MayorIgual:
-                    resultado += "<Reservada Op_MayorIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MayorIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MenorIgual:
-                    resultado += "<Reservada Op_MenorIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MenorIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MenorMenor:
-                    resultado += "<Reservada Op_MenorMenor>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MenorMenor>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MayorMayor:
-                    resultado += "<Reservada Op_MayorMayor>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MayorMayor>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MasIgual:
-                    resultado += "<Reservada Op_MasIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MasIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MenosIgual:
-                    resultado += "<Reservada Op_MenosIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MenosIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_PorIgual:
-                    resultado += "<Reservada Op_PorIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador PorIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_DivIgual:
-                    resultado += "<Reservada Op_DivIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador DivIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_ModIgual:
-                    resultado += "<Reservada Op_ModIgual>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador ModIgual>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MasMas:
-                    resultado += "<Reservada Op_MasMas>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MasMas>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Op_MenosMenos:
-                    resultado += "<Reservada Op_MenosMenos>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Operador MenosMenos>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Verdadero:
-                    resultado += "<Reservada Verdadero>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Valor Verdadero>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Falso:
-                    resultado += "<Reservada Falso>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Valor Falso>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Null:
-                    resultado += "<Reservada Null>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Valor Null>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Parent_a:
-                    resultado += "<Reservada Parent_a>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Parentesis abierto>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Parent_c:
-                    resultado += "<Reservada Parent_c>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Parentesis cerrado>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Llave_a:
-                    resultado += "<Reservada Llave_a>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Llave abierta>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Llave_c:
-                    resultado += "<Reservada Llave_c>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Llave cerrada>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Corchete_a:
-                    resultado += "<Reservada Corchete_a>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Corchete abierto>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Corchete_c:
-                    resultado += "<Reservada Corchete_c>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Corchete cerrado>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case P_Coma:
-                    resultado += "<Reservada P_Coma>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Punto y Coma>\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Punto:
-                    resultado += "<Reservada Punto>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Punto>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Coma:
-                    resultado += "<Reservada Coma>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Coma>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case Main:
                     resultado += "<Reservada Main>\t\t" + lexicos.lexemas + "\n";
                     break;
-                case Identificador:
-                    resultado += "<Reservada Identificador>\t\t" + lexicos.lexemas + "\n";
+                case Libreria:
+                    resultado += "<Libreria>\t\t\t" + lexicos.lexemas + "\n";
                     break;
+                case Identificador:
+                    resultado += "<Identificador>\t\t\t" + lexicos.lexemas + "\n";
+                    break;
+                case DosPuntos:
+                    resultado += "<DosPuntos>\t\t" + lexicos.lexemas + "\n";
+                    break;   
+                case TextoEntreComillas:
+                    resultado += "<TextoEntreComillas>\t\t" + lexicos.lexemas + "\n";
+                    break;                       
                 case Numero:
-                    resultado += "<Reservada Numero>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<Numero>\t\t\t" + lexicos.lexemas + "\n";
                     break;
                 case ERROR:
-                    resultado += "<Reservada ERROR>\t\t" + lexicos.lexemas + "\n";
+                    resultado += "<ERROR>\t\t" + lexicos.lexemas + "\n";
                     break;
                 default:
                     resultado += "  < " + lexicos.lexemas + " >\n";
@@ -460,6 +504,9 @@ public class FrmAnalizador extends javax.swing.JFrame {
     private javax.swing.JButton BotonAnalisis;
     private javax.swing.JTextArea Resultado;
     private javax.swing.JButton btnArchivo;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea txtAnalizarLex;

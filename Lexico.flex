@@ -268,8 +268,17 @@ espacio=[ \t \r]+
 /* Coma */
 ( "," ) {lexemas=yytext(); return Coma;}
 
+/* Dos Puntos */
+( ":" ) {lexemas=yytext(); return DosPuntos;}
+
 /* Marcador de inicio de algoritmo */
 ( "main" ) {lexemas=yytext(); return Main;}
+
+/* Libreria */
+({L}*+".h")|(({L}|{D})*+".h") {lexemas=yytext(); return Libreria;}
+
+/* TextoEntreComillas */
+( "\"" + (.)* + "\"" ) {lexemas=yytext(); return TextoEntreComillas;}
 
 /* Identificador */
 {L}({L}|{D})* {lexemas=yytext(); return Identificador;}
